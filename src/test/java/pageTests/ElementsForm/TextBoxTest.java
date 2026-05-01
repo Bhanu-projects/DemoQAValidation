@@ -1,4 +1,4 @@
-package tests;
+package pageTests.ElementsForm;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -7,24 +7,23 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import pages.TextBoxPage; // Import the page class you just made
+import pageClass.ElementsForm.TextBoxPage;
 
 public class TextBoxTest {
 	WebDriver driver;
-	TextBoxPage textBoxPage; // Declare the page object
+	TextBoxPage textBoxPage;
 
 	@BeforeMethod
-	public void setup() {
+	public void initialize() {
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://demoqa.com/");
-
-		// Initialize the page object by passing the driver
-		textBoxPage = new TextBoxPage(driver); 
+		
+		textBoxPage = new TextBoxPage(driver);
 	}
 
-	@Test
-	public void tc_el_001_validTextBoxSubmission() {
+	@Test()
+	public void tc_el_001_validTextBoxSubmission() throws InterruptedException {
 		textBoxPage.navigateToTextBoxMenu();
 		textBoxPage.enterFullName("VNR Academy");
 		textBoxPage.enterFullEmail("vnracademy@gmail.com");
@@ -35,7 +34,7 @@ public class TextBoxTest {
 	}
 
 	@Test()
-	public void tc_el_002_invalidEmailFormat() {
+	public void tc_el_002_invalidEmailFormat() throws InterruptedException {
 		textBoxPage.navigateToTextBoxMenu();
 		textBoxPage.enterEmail("abc@");
 		textBoxPage.clickSubmit();
@@ -44,8 +43,9 @@ public class TextBoxTest {
 
 	@AfterMethod
 	public void teardown() {
-		if (driver != null) {
-			driver.quit();
-		}
+//		if (driver != null) {
+//			driver.quit();
+//		}
+		driver.quit();
 	}
 }

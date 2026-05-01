@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TextBoxTest">
+      <class name="pageTests.ElementsForm.CheckBoxTest">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="tc_el_002_invalidEmailFormat"/>
-          <include name="tc_el_001_validTextBoxSubmission"/>
+          <include name="initialize"/>
+          <include name="tc_el_003_checkBoxExpandAndSelectAll"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.TextBoxTest -->
+      </class> <!-- pageTests.ElementsForm.CheckBoxTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
