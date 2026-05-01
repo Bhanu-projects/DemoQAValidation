@@ -83,7 +83,6 @@ public class TextBoxPage {
 	}
 
 	public void clickSubmit() throws InterruptedException {
-//		js.executeScript("arguments[0].click();", submitBtnTxtB);
 		js.executeScript("arguments[0].scrollIntoView({block:'center'});", submitBtnTxtB);
 		Thread.sleep(500);
 		wait.until(ExpectedConditions.elementToBeClickable(submitBtnTxtB)).click();

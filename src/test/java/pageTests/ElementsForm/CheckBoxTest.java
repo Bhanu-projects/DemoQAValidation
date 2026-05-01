@@ -23,20 +23,26 @@ public class CheckBoxTest {
 		checkBoxPage = new CheckBoxPage(driver);
     }
     
-    @Test()
+    @Test(invocationCount = 2)
     public void tc_el_003_checkBoxExpandAndSelectAll() throws InterruptedException {
     	
     	checkBoxPage.navigateToCheckBoxMenu();
-    	
     	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation());
-    	
     	checkBoxPage.clickExpandBtn();
-    	
     	checkBoxPage.clickHomeExpandBtns();
-    	
     	checkBoxPage.clickDocExpandBtns();
-    	
     	checkBoxPage.clickHomeCheckBox();
+    }
+    
+    @Test(invocationCount = 2)
+    public void tc_el_004_checkBoxExpandAndSelectIndividually() throws InterruptedException {
+    	checkBoxPage.navigateToCheckBoxMenu();
+    	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation());
+    	checkBoxPage.clickExpandBtn();
+    	checkBoxPage.clickHomeExpandBtns();
+    	checkBoxPage.clickDocExpandBtns();
+//    	checkBoxPage.clickHomeCheckBox();
+    	checkBoxPage.clickDownloadsCheckBox();
     }
     
     @AfterMethod

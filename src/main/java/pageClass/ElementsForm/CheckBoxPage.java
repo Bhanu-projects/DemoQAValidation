@@ -50,6 +50,9 @@ public class CheckBoxPage {
 	@FindBy(xpath = "//span[@aria-label='Select Home']")
 	WebElement selectHomeCheckBox;
 	
+	@FindBy(xpath = "//span[@aria-label='Select Downloads']")
+	WebElement selectDownloadsCheckBox;
+	
 	public void navigateToCheckBoxMenu() throws InterruptedException {
 		js.executeScript("arguments[0].scrollIntoView({block:'center'});", elementBox);
 		Thread.sleep(1000);
@@ -85,14 +88,13 @@ public class CheckBoxPage {
 	}
 	
 	public void clickHomeCheckBox() {
-//		js.executeScript("arguments[0].scrollIntoView({block:'center'});", ele);
-//		Thread.sleep(500);
 		act.moveToElement(selectHomeCheckBox).click().perform();
-//		wait.until(ExpectedConditions.elementToBeClickable(selectHomeCheckBox)).click();
-//		selectHomeCheckBox.click();
 	}
 	
-	
+	public void clickDownloadsCheckBox() {
+		act.moveToElement(selectDownloadsCheckBox).click().perform();
+//		selectDownloadsCheckBox.click();
+	}
 	
 	
 }
