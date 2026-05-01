@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageTests.ElementsForm.CheckBoxTest">
+      <class name="pageTests.ElementsForm.RadioButtonTest">
         <methods>
           <include name="initialize"/>
-          <include name="tc_el_003_checkBoxExpandAndSelectAll"/>
+          <include name="tc_el_005_RadioButtonYesSelection"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- pageTests.ElementsForm.CheckBoxTest -->
+      </class> <!-- pageTests.ElementsForm.RadioButtonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -23,21 +23,21 @@ public class CheckBoxTest {
 		checkBoxPage = new CheckBoxPage(driver);
     }
     
-    @Test(invocationCount = 2)
+    @Test
     public void tc_el_003_checkBoxExpandAndSelectAll() throws InterruptedException {
     	
     	checkBoxPage.navigateToCheckBoxMenu();
-    	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation());
+    	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation(), "Check Box Field is Not Loaded");
     	checkBoxPage.clickExpandBtn();
     	checkBoxPage.clickHomeExpandBtns();
     	checkBoxPage.clickDocExpandBtns();
     	checkBoxPage.clickHomeCheckBox();
     }
     
-    @Test(invocationCount = 2)
+    @Test
     public void tc_el_004_checkBoxExpandAndSelectIndividually() throws InterruptedException {
     	checkBoxPage.navigateToCheckBoxMenu();
-    	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation());
+    	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation(), "Check Box Field is Not Loaded");
     	checkBoxPage.clickExpandBtn();
     	checkBoxPage.clickHomeExpandBtns();
     	checkBoxPage.clickDocExpandBtns();

@@ -22,7 +22,7 @@ public class TextBoxTest {
 		textBoxPage = new TextBoxPage(driver);
 	}
 
-	@Test(invocationCount = 2)
+	@Test
 	public void tc_el_001_validTextBoxSubmission() throws InterruptedException {
 		textBoxPage.navigateToTextBoxMenu();
 		textBoxPage.enterFullName("VNR Academy");
@@ -33,7 +33,7 @@ public class TextBoxTest {
 		Assert.assertTrue(textBoxPage.isResultBoxDisplayed(), "Result box did not appear!");
 	}
 
-	@Test(invocationCount = 2)
+	@Test
 	public void tc_el_002_invalidEmailFormat() throws InterruptedException {
 		textBoxPage.navigateToTextBoxMenu();
 		textBoxPage.enterEmail("abc@");
