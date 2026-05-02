@@ -6,8 +6,8 @@
       <class name="pageTests.ElementsForm.RadioButtonTest">
         <methods>
           <include name="initialize"/>
-          <include name="tc_el_005_RadioButtonYesSelection"/>
           <include name="tearDown"/>
+          <include name="tc_el_006_radioButtonImpressiveSelection"/>
         </methods>
       </class> <!-- pageTests.ElementsForm.RadioButtonTest -->
     </classes>

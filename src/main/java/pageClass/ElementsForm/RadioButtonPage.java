@@ -45,6 +45,9 @@ public class RadioButtonPage {
 		@FindBy(className = "text-success")
 		WebElement yesMsg;
 		
+		@FindBy(id = "impressiveRadio")
+		WebElement impressiveRadioButton;
+		
 		public void navigateToRadioButtonMenu() throws InterruptedException {
 			js.executeScript("arguments[0].scrollIntoView({block:'center'});", elementBox);
 			Thread.sleep(1000);
@@ -63,9 +66,9 @@ public class RadioButtonPage {
 			act.moveToElement(yesRadioButton).click().perform();
 		}
 		
-		public boolean selectedYesButtonMessage() {
+		public boolean getSelectedButtonMessage() {
 			String selectedTextMsg = selectedMsg.getText();
-			if(selectedTextMsg.equalsIgnoreCase("You have selected Yes")) {
+			if(selectedTextMsg.equalsIgnoreCase("You have selected Yes") || selectedTextMsg.equalsIgnoreCase("You have selected Impressive")) {
 				return true;
 			}
 			else {
@@ -73,8 +76,9 @@ public class RadioButtonPage {
 			}
 		}
 		
-		
-		
+		public void selectImpressiveRadioButton() {
+			act.moveToElement(impressiveRadioButton).click().perform();
+		}
 		
 }
 

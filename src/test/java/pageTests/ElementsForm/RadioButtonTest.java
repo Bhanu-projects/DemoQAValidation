@@ -24,11 +24,19 @@ public class RadioButtonTest {
     }
     
     @Test
-    public void tc_el_005_RadioButtonYesSelection () throws InterruptedException {
+    public void tc_el_005_radioButtonYesSelection () throws InterruptedException {
     	radioButtonPage.navigateToRadioButtonMenu();
     	Assert.assertTrue(radioButtonPage.radioButtonTitleValidation(), "!?Radio Button Field is Not Loaded Successfully!?");
     	radioButtonPage.selectYesRadioButton();
-    	Assert.assertTrue(radioButtonPage.selectedYesButtonMessage(), "!?You have selected Yes Message is not Displayed!?");
+    	Assert.assertTrue(radioButtonPage.getSelectedButtonMessage(), "!?You have selected Yes Message is not Displayed!?");
+    }
+    
+    @Test
+    public void tc_el_006_radioButtonImpressiveSelection() throws InterruptedException {
+    	radioButtonPage.navigateToRadioButtonMenu();
+    	Assert.assertTrue(radioButtonPage.radioButtonTitleValidation(), "!?Radio Button Field is Not Loaded Successfully!?");
+    	radioButtonPage.selectImpressiveRadioButton();
+    	Assert.assertTrue(radioButtonPage.getSelectedButtonMessage(), "!?You have selected Impressive Message is not Displayed!?");
     }
     
     @AfterMethod
