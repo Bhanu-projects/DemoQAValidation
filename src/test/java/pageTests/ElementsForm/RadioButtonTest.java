@@ -25,6 +25,7 @@ public class RadioButtonTest {
     
     @Test
     public void tc_el_005_yesRadioButtonSelection () throws InterruptedException {
+    	Assert.assertTrue(radioButtonPage.demoQAPageValidation(), "!?DemoQa Page is not Loaded.Use External Waits to wait for the page to load");
     	radioButtonPage.navigateToRadioButtonMenu();
     	Assert.assertTrue(radioButtonPage.radioButtonTitleValidation(), "!?Radio Button Field is Not Loaded Successfully!?");
     	radioButtonPage.selectYesRadioButton();

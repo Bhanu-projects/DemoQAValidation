@@ -1,5 +1,7 @@
 package pageTests.ElementsForm;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -10,21 +12,22 @@ import org.testng.annotations.Test;
 import pageClass.ElementsForm.CheckBoxPage;
 
 public class CheckBoxTest {
-	
 	WebDriver driver;
 	CheckBoxPage checkBoxPage;
     
 	@BeforeMethod
     public void initialize() {
     	driver = new EdgeDriver();
+    	driver.get("https://demoqa.com/");
+    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
-		driver.get("https://demoqa.com/");
+		
 		
 		checkBoxPage = new CheckBoxPage(driver);
     }
     
     @Test
-    public void tc_el_003_checkBoxExpandAndSelectAll() throws InterruptedException {
+    public void tc_el_003_checkBox_ExpandAndSelectAll() throws InterruptedException {
     	
     	checkBoxPage.navigateToCheckBoxMenu();
     	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation(), "Check Box Field is Not Loaded");
@@ -35,7 +38,7 @@ public class CheckBoxTest {
     }
     
     @Test
-    public void tc_el_004_checkBoxExpandAndSelectIndividually() throws InterruptedException {
+    public void tc_el_004_checkBox_ExpandAndSelectIndividually() throws InterruptedException {
     	checkBoxPage.navigateToCheckBoxMenu();
     	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation(), "Check Box Field is Not Loaded");
     	checkBoxPage.clickExpandBtn();

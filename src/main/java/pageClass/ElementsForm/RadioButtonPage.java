@@ -27,6 +27,9 @@ public class RadioButtonPage {
 			PageFactory.initElements(driver, this);
 		}
 		
+		@FindBy(xpath = "//a[@href='https://demoqa.com']//img")
+		WebElement demoQATitle;
+		
 		@FindBy(xpath = "//h5[contains(text(),'Elements')]")
 		WebElement elementBox;
 		
@@ -47,6 +50,10 @@ public class RadioButtonPage {
 		
 		@FindBy(id = "noRadio")
 		WebElement noRadioButton;
+		
+		public boolean demoQAPageValidation() {
+			return wait.until(ExpectedConditions.elementToBeClickable(demoQATitle)).isDisplayed();
+		}
 		
 		public void navigateToRadioButtonMenu() throws InterruptedException {
 			js.executeScript("arguments[0].scrollIntoView({block:'center'});", elementBox);

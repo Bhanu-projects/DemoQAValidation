@@ -54,6 +54,10 @@ public class TextBoxPage {
 
 	@FindBy(css = ".border.col-md-12.col-sm-12")
 	WebElement fullDetailsTxtB;
+	
+	public boolean demoQAPageValidation() {
+		return wait.until(ExpectedConditions.elementToBeClickable(demoQATitle)).isDisplayed();
+	}
 
 	public void navigateToTextBoxMenu() throws InterruptedException {
 		js.executeScript("arguments[0].scrollIntoView({block:'center'});", elementBox);
@@ -63,6 +67,10 @@ public class TextBoxPage {
 		js.executeScript("arguments[0].scrollIntoView({block:'center'});", textBoxField);
 		Thread.sleep(500);
 		wait.until(ExpectedConditions.elementToBeClickable(textBoxField)).click();
+	}
+	
+	public boolean textBoxTitleValidation() {
+		return wait.until(ExpectedConditions.elementToBeClickable(textBoxTitle)).isDisplayed();
 	}
 
 	public void enterFullName(String name) {

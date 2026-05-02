@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageTests.ElementsForm.RadioButtonTest">
+      <class name="pageTests.ElementsForm.WebTablesTest">
         <methods>
-          <include name="initialize"/>
+          <include name="tc_el_008_webTable_VerifyDataRows"/>
           <include name="tearDown"/>
-          <include name="tc_el_007_noRadioButtonSelection"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- pageTests.ElementsForm.RadioButtonTest -->
+      </class> <!-- pageTests.ElementsForm.WebTablesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
