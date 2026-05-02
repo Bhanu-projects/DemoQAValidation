@@ -42,11 +42,11 @@ public class RadioButtonPage {
 		@FindBy(className = "mt-3")
 		WebElement selectedMsg;
 		
-		@FindBy(className = "text-success")
-		WebElement yesMsg;
-		
 		@FindBy(id = "impressiveRadio")
 		WebElement impressiveRadioButton;
+		
+		@FindBy(id = "noRadio")
+		WebElement noRadioButton;
 		
 		public void navigateToRadioButtonMenu() throws InterruptedException {
 			js.executeScript("arguments[0].scrollIntoView({block:'center'});", elementBox);
@@ -78,6 +78,11 @@ public class RadioButtonPage {
 		
 		public void selectImpressiveRadioButton() {
 			act.moveToElement(impressiveRadioButton).click().perform();
+		}
+		
+		public boolean noRadioButtonIsEnabled() {
+			act.moveToElement(noRadioButton).perform();
+			return noRadioButton.isEnabled();
 		}
 		
 }
