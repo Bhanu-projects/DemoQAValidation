@@ -34,6 +34,18 @@ public class WebTablesTest {
 		Assert.assertEquals(webtablepage.countOfRows(), 3, "!?Count of rows is not as expected?!");
 	}
 	
+	@Test
+	public void tc_el_009_webTable_AddNewRecord() throws InterruptedException {
+		tc_el_008_webTable_VerifyDataRows();
+		webtablepage.clickAddButton();
+		Assert.assertTrue(webtablepage.registrationFormValidation(), "!?Registration Form is Not Loaded Check Once Again?!");
+		webtablepage.addNewRecord("Bhanu", "Prakash", "admin@gmail.com", 23, 1000000, "Automation QA Testing");
+		webtablepage.clickSubmitBtn();
+		Assert.assertEquals(webtablepage.countOfRows(), 4, "!?Count of rows is not as expected?!");
+	}
+	
+	
+	
 	@AfterMethod
 	public void tearDown() {
 		if(driver!=null) {

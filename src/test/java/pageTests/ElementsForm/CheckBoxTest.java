@@ -28,7 +28,7 @@ public class CheckBoxTest {
     
     @Test
     public void tc_el_003_checkBox_ExpandAndSelectAll() throws InterruptedException {
-    	
+    	Assert.assertTrue(checkBoxPage.demoQAPageValidation(), "!?DemoQa Page is not Loaded.Use External Waits to wait for the page to load");
     	checkBoxPage.navigateToCheckBoxMenu();
     	Assert.assertTrue(checkBoxPage.checkBoxTitleValidation(), "Check Box Field is Not Loaded");
     	checkBoxPage.clickExpandBtn();

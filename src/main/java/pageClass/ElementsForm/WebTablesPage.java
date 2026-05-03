@@ -43,6 +43,33 @@ public class WebTablesPage {
 	@FindBy(xpath = "//table[@class='-striped -highlight table table-striped table-bordered table-hover']/tbody/tr")
 	List<WebElement> rowCount;
 	
+	@FindBy(id = "addNewRecordButton")
+	WebElement addBtn;
+	
+	@FindBy(id = "registration-form-modal")
+	WebElement registrationForm;
+	
+	@FindBy(id = "firstName")
+	WebElement firstName;
+	
+	@FindBy(id = "lastName")
+	WebElement lastName;
+	
+	@FindBy(id = "userEmail")
+	WebElement userEmail;
+	
+	@FindBy(id = "age")
+	WebElement age;
+	
+	@FindBy(id = "salary")
+	WebElement salary;
+	
+	@FindBy(id = "department")
+	WebElement dept;
+	
+	@FindBy(id = "submit")
+	WebElement submitBtn;
+	
 	public boolean demoQAPageValidation() {
 		return wait.until(ExpectedConditions.elementToBeClickable(demoQATitle)).isDisplayed();
 	}
@@ -62,27 +89,28 @@ public class WebTablesPage {
 	}
 	
 	public int countOfRows() {
-		
 		return rowCount.size();
 	}
 	
+	public void clickAddButton() {
+		act.moveToElement(addBtn).click().perform();
+	}
 	
+	public boolean registrationFormValidation() {
+		act.scrollToElement(registrationForm).perform();
+		return registrationForm.isDisplayed();
+	}
 	
+	public void addNewRecord(String firstName, String lastName, String email, int age, int salary, String dept) {
+		this.firstName.sendKeys(firstName);
+		this.lastName.sendKeys(lastName);
+		this.userEmail.sendKeys(email);
+		this.age.sendKeys(String.valueOf(age));
+		this.salary.sendKeys(String.valueOf(salary));
+		this.dept.sendKeys(dept);
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
+	public void clickSubmitBtn() throws InterruptedException {
+		act.moveToElement(submitBtn).click().perform();
+	}
 }
