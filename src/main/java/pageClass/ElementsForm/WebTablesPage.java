@@ -70,6 +70,12 @@ public class WebTablesPage {
 	@FindBy(id = "submit")
 	WebElement submitBtn;
 	
+	@FindBy(id = "edit-record-1")
+	WebElement editBtn;
+	
+	@FindBy(css = "tbody tr:nth-child(1) td:nth-child(5)")
+	WebElement verifySalary;
+	
 	public boolean demoQAPageValidation() {
 		return wait.until(ExpectedConditions.elementToBeClickable(demoQATitle)).isDisplayed();
 	}
@@ -112,5 +118,18 @@ public class WebTablesPage {
 	
 	public void clickSubmitBtn() throws InterruptedException {
 		act.moveToElement(submitBtn).click().perform();
+	}
+	
+	public void clickEditBtn() {
+		js.executeScript("arguments[0].click();", editBtn);
+	}
+	
+	public void editFirstRecordSalary(int sal) {
+		wait.until(ExpectedConditions.elementToBeClickable(salary)).clear();
+		salary.sendKeys(String.valueOf(sal));
+	}
+	
+	public String getFirstRowSalary() {
+		return verifySalary.getText();
 	}
 }

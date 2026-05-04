@@ -5,9 +5,9 @@
     <classes>
       <class name="pageTests.ElementsForm.WebTablesTest">
         <methods>
+          <include name="tc_el_010_webTable_EditRecord"/>
           <include name="tearDown"/>
           <include name="initialize"/>
-          <include name="tc_el_009_webTable_AddNewRecord"/>
         </methods>
       </class> <!-- pageTests.ElementsForm.WebTablesTest -->
     </classes>

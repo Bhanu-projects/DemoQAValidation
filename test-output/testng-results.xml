@@ -1,123 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-03T19:29:41 IST" name="Suite" finished-at="2026-05-03T19:30:12 IST" duration-ms="31148">
+  <suite started-at="2026-05-04T14:52:36 IST" name="Suite" finished-at="2026-05-04T14:53:15 IST" duration-ms="38928">
     <groups>
     </groups>
-    <test started-at="2026-05-03T19:29:41 IST" name="Test" finished-at="2026-05-03T19:30:12 IST" duration-ms="31148">
+    <test started-at="2026-05-04T14:52:36 IST" name="Test" finished-at="2026-05-04T14:53:15 IST" duration-ms="38928">
       <class name="pageTests.ElementsForm.RadioButtonTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:29:41 IST" name="initialize" finished-at="2026-05-03T19:29:48 IST" duration-ms="7128" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:52:36 IST" name="initialize" finished-at="2026-05-04T14:52:49 IST" duration-ms="12615" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_005_yesRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:29:48 IST" name="tc_el_005_yesRadioButtonSelection" finished-at="2026-05-03T19:29:54 IST" duration-ms="6216" status="PASS">
+        <test-method signature="tc_el_005_yesRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:52:49 IST" name="tc_el_005_yesRadioButtonSelection" finished-at="2026-05-04T14:52:53 IST" duration-ms="3608" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_005_yesRadioButtonSelection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:29:54 IST" name="tearDown" finished-at="2026-05-03T19:29:54 IST" duration-ms="466" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:52:53 IST" name="tearDown" finished-at="2026-05-04T14:52:53 IST" duration-ms="875" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:29:54 IST" name="initialize" finished-at="2026-05-03T19:29:59 IST" duration-ms="4368" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:52:53 IST" name="initialize" finished-at="2026-05-04T14:52:59 IST" duration-ms="5943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_006_impressiveRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:29:59 IST" name="tc_el_006_impressiveRadioButtonSelection" finished-at="2026-05-03T19:30:04 IST" duration-ms="4793" status="PASS">
+        <test-method signature="tc_el_006_impressiveRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:52:59 IST" name="tc_el_006_impressiveRadioButtonSelection" finished-at="2026-05-04T14:53:03 IST" duration-ms="3726" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_006_impressiveRadioButtonSelection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:30:04 IST" name="tearDown" finished-at="2026-05-03T19:30:04 IST" duration-ms="809" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:53:03 IST" name="tearDown" finished-at="2026-05-04T14:53:03 IST" duration-ms="321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:30:04 IST" name="initialize" finished-at="2026-05-03T19:30:09 IST" duration-ms="4283" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:53:03 IST" name="initialize" finished-at="2026-05-04T14:53:08 IST" duration-ms="4220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_007_noRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:30:09 IST" name="tc_el_007_noRadioButtonSelection" finished-at="2026-05-03T19:30:12 IST" duration-ms="2794" status="PASS">
+        <test-method signature="tc_el_007_noRadioButtonSelection()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:53:08 IST" name="tc_el_007_noRadioButtonSelection" finished-at="2026-05-04T14:53:11 IST" duration-ms="2901" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_007_noRadioButtonSelection -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@7e6f74c]" started-at="2026-05-03T19:30:12 IST" name="tearDown" finished-at="2026-05-03T19:30:12 IST" duration-ms="215" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.RadioButtonTest@dd05255]" started-at="2026-05-04T14:53:11 IST" name="tearDown" finished-at="2026-05-04T14:53:11 IST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pageTests.ElementsForm.RadioButtonTest -->
       <class name="pageTests.ElementsForm.TextBoxTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:29:41 IST" name="initialize" finished-at="2026-05-03T19:29:49 IST" duration-ms="7900" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:52:36 IST" name="initialize" finished-at="2026-05-04T14:52:50 IST" duration-ms="13228" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_001_valid_TextBox_Submission()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:29:49 IST" name="tc_el_001_valid_TextBox_Submission" finished-at="2026-05-03T19:29:56 IST" duration-ms="7195" status="PASS">
+        <test-method signature="tc_el_001_valid_TextBox_Submission()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:52:50 IST" name="tc_el_001_valid_TextBox_Submission" finished-at="2026-05-04T14:52:55 IST" duration-ms="5719" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_001_valid_TextBox_Submission -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:29:56 IST" name="teardown" finished-at="2026-05-03T19:29:57 IST" duration-ms="1013" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:52:55 IST" name="teardown" finished-at="2026-05-04T14:52:56 IST" duration-ms="363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:29:57 IST" name="initialize" finished-at="2026-05-03T19:30:01 IST" duration-ms="4704" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:52:56 IST" name="initialize" finished-at="2026-05-04T14:53:02 IST" duration-ms="6343" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_002_invalid_EmailFormat()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:30:01 IST" name="tc_el_002_invalid_EmailFormat" finished-at="2026-05-03T19:30:07 IST" duration-ms="5573" status="PASS">
+        <test-method signature="tc_el_002_invalid_EmailFormat()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:53:02 IST" name="tc_el_002_invalid_EmailFormat" finished-at="2026-05-04T14:53:05 IST" duration-ms="3046" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_002_invalid_EmailFormat -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@6150c3ec]" started-at="2026-05-03T19:30:07 IST" name="teardown" finished-at="2026-05-03T19:30:07 IST" duration-ms="271" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:pageTests.ElementsForm.TextBoxTest@44c03695]" started-at="2026-05-04T14:53:05 IST" name="teardown" finished-at="2026-05-04T14:53:05 IST" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- pageTests.ElementsForm.TextBoxTest -->
       <class name="pageTests.ElementsForm.WebTablesTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:29:41 IST" name="initialize" finished-at="2026-05-03T19:29:49 IST" duration-ms="7901" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:52:36 IST" name="initialize" finished-at="2026-05-04T14:52:49 IST" duration-ms="12735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_008_webTable_VerifyDataRows()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:29:49 IST" name="tc_el_008_webTable_VerifyDataRows" finished-at="2026-05-03T19:29:53 IST" duration-ms="4202" status="PASS">
+        <test-method signature="tc_el_008_webTable_VerifyDataRows()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:52:49 IST" name="tc_el_008_webTable_VerifyDataRows" finished-at="2026-05-04T14:52:52 IST" duration-ms="2471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_008_webTable_VerifyDataRows -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:29:53 IST" name="tearDown" finished-at="2026-05-03T19:29:54 IST" duration-ms="1090" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:52:52 IST" name="tearDown" finished-at="2026-05-04T14:52:52 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:29:54 IST" name="initialize" finished-at="2026-05-03T19:29:58 IST" duration-ms="4005" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:52:52 IST" name="initialize" finished-at="2026-05-04T14:52:57 IST" duration-ms="5483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_009_webTable_AddNewRecord()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:29:58 IST" name="tc_el_009_webTable_AddNewRecord" finished-at="2026-05-03T19:30:06 IST" duration-ms="7667" status="PASS">
+        <test-method signature="tc_el_009_webTable_AddNewRecord()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:52:57 IST" name="tc_el_009_webTable_AddNewRecord" finished-at="2026-05-04T14:53:01 IST" duration-ms="3951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_009_webTable_AddNewRecord -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@14cd1699]" started-at="2026-05-03T19:30:06 IST" name="tearDown" finished-at="2026-05-03T19:30:06 IST" duration-ms="701" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:53:01 IST" name="tearDown" finished-at="2026-05-04T14:53:02 IST" duration-ms="305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:53:02 IST" name="initialize" finished-at="2026-05-04T14:53:08 IST" duration-ms="6140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="tc_el_010_webTable_EditRecord()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:53:08 IST" name="tc_el_010_webTable_EditRecord" finished-at="2026-05-04T14:53:11 IST" duration-ms="3517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_el_010_webTable_EditRecord -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.WebTablesTest@77888435]" started-at="2026-05-04T14:53:11 IST" name="tearDown" finished-at="2026-05-04T14:53:11 IST" duration-ms="258" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- pageTests.ElementsForm.WebTablesTest -->
       <class name="pageTests.ElementsForm.CheckBoxTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:29:41 IST" name="initialize" finished-at="2026-05-03T19:29:48 IST" duration-ms="6992" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:52:36 IST" name="initialize" finished-at="2026-05-04T14:52:50 IST" duration-ms="13769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_003_checkBox_ExpandAndSelectAll()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:29:48 IST" name="tc_el_003_checkBox_ExpandAndSelectAll" finished-at="2026-05-03T19:29:56 IST" duration-ms="8072" status="PASS">
+        <test-method signature="tc_el_003_checkBox_ExpandAndSelectAll()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:52:50 IST" name="tc_el_003_checkBox_ExpandAndSelectAll" finished-at="2026-05-04T14:52:57 IST" duration-ms="7309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_003_checkBox_ExpandAndSelectAll -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:29:56 IST" name="tearDown" finished-at="2026-05-03T19:29:57 IST" duration-ms="1034" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:52:57 IST" name="tearDown" finished-at="2026-05-04T14:52:58 IST" duration-ms="339" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:29:57 IST" name="initialize" finished-at="2026-05-03T19:30:01 IST" duration-ms="4639" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:52:58 IST" name="initialize" finished-at="2026-05-04T14:53:11 IST" duration-ms="13111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="tc_el_004_checkBox_ExpandAndSelectIndividually()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:30:01 IST" name="tc_el_004_checkBox_ExpandAndSelectIndividually" finished-at="2026-05-03T19:30:08 IST" duration-ms="6857" status="PASS">
+        <test-method signature="tc_el_004_checkBox_ExpandAndSelectIndividually()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:53:11 IST" name="tc_el_004_checkBox_ExpandAndSelectIndividually" finished-at="2026-05-04T14:53:15 IST" duration-ms="4154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc_el_004_checkBox_ExpandAndSelectIndividually -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@44c03695]" started-at="2026-05-03T19:30:08 IST" name="tearDown" finished-at="2026-05-03T19:30:08 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:pageTests.ElementsForm.CheckBoxTest@7e6f74c]" started-at="2026-05-04T14:53:15 IST" name="tearDown" finished-at="2026-05-04T14:53:15 IST" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

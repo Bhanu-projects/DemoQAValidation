@@ -44,7 +44,14 @@ public class WebTablesTest {
 		Assert.assertEquals(webtablepage.countOfRows(), 4, "!?Count of rows is not as expected?!");
 	}
 	
-	
+	@Test
+	public void tc_el_010_webTable_EditRecord() throws InterruptedException {
+		tc_el_008_webTable_VerifyDataRows();
+		webtablepage.clickEditBtn();
+		webtablepage.editFirstRecordSalary(250);
+		webtablepage.clickSubmitBtn();
+		Assert.assertEquals(webtablepage.getFirstRowSalary(), "250", "!?The Salary is Not as Expected?!");
+	}
 	
 	@AfterMethod
 	public void tearDown() {
